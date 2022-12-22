@@ -1,0 +1,73 @@
+@import './base/fonts';
+@import './base/variables';
+
+@import './slick/slick-theme.scss';
+@import './slick/slick.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #151515;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@import './blocks/button';
+@import './blocks/title';
+@import './blocks/header';
+@import './blocks/parser';
+@import './blocks/technology';
+@import './blocks/footer';
+@import './blocks/example';
+@import './blocks/helper';
+@import './blocks/tech';
+@import './blocks/why';
+@import './blocks/faq';
+@import './blocks/works';
+@import './blocks/modal';
+
+
+@import './base/mods';

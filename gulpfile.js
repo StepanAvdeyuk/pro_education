@@ -63,6 +63,13 @@ gulp.task('favicon', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('slick', function () {
+    return gulp.src("src/slick/**/*")
+        .pipe(gulp.dest("dist/slick"))
+        .pipe(browserSync.stream());
+});
+
+
 gulp.task('icons', function () {
     return gulp.src("src/icons/**/*")
         .pipe(gulp.dest("dist/icons"))
@@ -76,4 +83,4 @@ gulp.task('images', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'favicon', 'icons', 'html', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'favicon', 'icons', 'html', 'images', 'slick'));

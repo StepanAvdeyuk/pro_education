@@ -1,0 +1,203 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #131313;
+    color: $main-text;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 30px 0;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 148px;   
+    }
+    &__sidenav {
+        // display: none;
+        z-index: 2;
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $main-bg;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        &-close {
+            color: #fff;
+            font-size: 30px;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+        &-wrapper {
+            padding: 40px;
+            a {
+                padding-left: 20px;
+                display: block;
+                color:#fff;
+                text-decoration: none;
+                margin-bottom: 15px;
+                font-size: 28px;
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -10px;
+                    background-color: none;
+                    transition: all 0.3s ease-in-out;
+                }
+                &.active {
+                    &:before {
+                        background-color: $second-color;
+                    }
+                }
+            }
+        }
+    }
+    &__burger {
+        display: none;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        height: 18px;
+        width: 30px;
+            &:active {
+                div {
+                    width: 20px;
+                }
+            }
+        div {
+            transition: all 0.3s ease-in-out;
+            width: 30px;
+            height: 3px;
+            border-radius: 2px;
+            background-color: $main-text;
+        }
+    }
+    &__nav {
+        ul {
+            margin-right: 280px;
+            display: flex;
+            font-weight: 400;
+            font-size: 16px;
+            a {
+                color: $main-text;
+                text-decoration: none;
+                position: relative;
+                margin-left: 30px;
+                transition: all 0.3s ease-in-out;
+                &:before {
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -12px;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background: $second-color;
+                }
+                &.active {
+                    font-weight: 600;
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__language {
+        a {
+            color: $main-text;
+        }
+        font-weight: 400;
+        font-size: 16px;
+        span {
+            transition: all 0.3s ease-in-out;
+            &.active {
+                font-weight: 600;
+                color: $second-color;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        position: relative;
+        &__wrapper {
+            padding: 40px 0 30px 0;
+        }
+        ul {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__wrapper {
+            padding: 30px 0;
+        }
+        ul {
+            display: none;
+        }
+        &__burger {
+            display: flex;
+        }
+        &__language {
+            margin-right: 100px;
+        }
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__logo {
+            width: 100px;
+            img {
+                width: 100%;
+            }
+        }
+        &__language {
+            margin-right: 30px;
+        }
+        &__sidenav {
+            &-close {
+                top: 30px;
+                right: 30px;
+                font-size: 26px;
+            }
+            &-wrapper {
+                padding: 30px;
+                a {
+                    font-size: 26px;
+                    &.active {
+                        &::before {
+                            left: -5px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

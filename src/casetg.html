@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web agency</title>
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.min.css">
+    
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="KOLESNIKOV DEVELOPMENT - Web agency">
+        <meta name="description" content="Создание Landing-Page, корпоративного сайта, интернет-магазина, портала и других много и одностраничных сайтов.">
+    
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kolesnikov.dev/">
+        <meta property="og:title" content="KOLESNIKOV DEVELOPMENT - Web agency">
+        <meta property="og:description" content="Создание Landing-Page, корпоративного сайта, интернет-магазина, портала и других много и одностраничных сайтов.">
+        <meta property="og:image" content="./img/img-meta.jpg">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://kolesnikov.dev/">
+        <meta property="twitter:title" content="KOLESNIKOV DEVELOPMENT - Web agency">
+        <meta property="twitter:description" content="Создание Landing-Page, корпоративного сайта, интернет-магазина, портала и других много и одностраничных сайтов.">
+        <meta property="twitter:image" content="./img/img-meta.jpg">
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="./index.html" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="./index.html" class="active">Главная</a></li>
+                        <li><a href="./index.html#tech">Технологии</a></li>
+                        <li><a href="./index.html#works">Наши работы</a></li>
+                        <li><a href="./index.html#about">О нас</a></li>
+                    </ul>
+                </nav>   
+                <div class="header__language"><span class="active">RU</span> | <a href="./casetg_en.html"><span>ENG</span></a></div>
+                <div class="header__burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="header__sidenav">
+                    <div class="header__sidenav-wrapper">
+                        <a href="./index.html">Главная</a>
+                        <a href="./index.html#tech">Технологии</a>
+                        <a href="./index.html#works">Наши работы</a>
+                        <a href="./index.html#about">О нас</a>
+                    </div>
+                    <div class="header__sidenav-close">✕</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="parser">
+        <div class="container">
+            <h2 class="title parser__title"> Конструктор чат-ботов в Telegram</h2>
+            <div class="parser__descr">​​В разработке Telegram- конструктора перед нами стояла амбициозная и непростая задача — создать уникальное торговое предложение на рынке, конструктор, который не будет падать при пиковых нагрузках, что является главным минусом конкурентных площадок, . Который будет отличаться большим функционалом, а также иметь связку с телепорт- сервисом для создания единой регистрации, быстрого переключения между сервисами и автоматизации в построении воронок
+            </div>
+            <div class="parser__text" style="width: 85%;">
+                Возможности платформы: конструирование ботов и их запуск / возможность создания рассылок / связь с сервисом  / возможность создания множества условий, например проверка подписки на Instagram / настройка оплаты.
+            </div>
+        </div>
+    </section>
+
+    <section class="technology">
+        <div class="container">
+            <div class="technology__wrapper bg2">
+                <span>Видеообзор на платформу</span>
+                <p>Время просмотра - 1 мин</p>
+                <a href="https://youtu.be/GcX8Sh_AVuM" target="_blank"><button class="btn">Смотреть видео</button></a>
+                <div class="technology__play">
+                    <a href="https://youtu.be/GcX8Sh_AVuM"><img src="img/play.png" alt="play"></a>
+                </div>
+            </div>
+            <div class="technology__title">Технология разработки сервиса:</div>
+            <div class="technology__text p0-75">Технология: Бек на AWS Chalice, фронт написан на нативном js, так как до этого во всем сервисе не применялось никаких фреймворков. Чтобы сервис был однородным, было принято решение использовать ванильный js. Боты висят как lambda функции в aws. Основа написана на aiogram. Сценарий отправляется в dynamodb aws с фронта в формате json и далее используется ботом как инструкция для выполнения действий в каждой конкретной ситуации. Все медиа загружаются в бота напрямую, сохраняются нами и имеют возможность использоваться при создании воронки (это позволяет добавить такие форматы медиа, как круглые видео и голосовые сообщения для воронки).
+            <br><br>
+            Проект передан для публикации и связывания с сервисом команде заказчика. На создание 
+            проекта понадобилось больше, чем мы ожидали. Разработка длилась около 6 месяцев.
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="form">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__questions">
+                    <h2 class="title">У Вас остались какие-либо вопросы?</h2>
+                    <div class="footer__text">Оставьте ваши данные, мы свяжемся с Вами и ответим на все интересующие Вас вопросы. </div>
+                    <div class="footer__links">
+                        <a href="https://t.me/Kolesnikov15" target="_blank"><img src="img/telegram.svg" alt="telegram"></a>
+                        <a href="https://instagram.com/kolesnikov.vd?utm_medium=copy_link" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+                        <a href="https://wa.me/79371234333" target="_blank"><img src="img/phone.svg" alt="phone"></a>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <form>
+                        <div class="footer__input">
+                            <input type="text" name="name" placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="footer__input">
+                            <input type="tel" name="phone" placeholder="Введите Ваш телефон">
+                        </div>
+                        <div class="footer__choise">
+                            <div>
+                                <p>Выберите категорию проекта</p>
+                                <img src='img/arrow.svg' alt="arrow">
+                            </div>
+                            <ul>
+                                <li>Одностраничный сайт</li>
+                                <li>Веб-платформа</li>
+                                <li>Интернет-магазин</li>
+                                <li>Корпоративный сайт</li>
+                                <li>Портал</li>
+                                <li>Другое</li>
+                                <li>Не могу определиться</li>
+                            </ul>
+                        </div>
+                        <button class="btn w-268 footer__btn">Оставить заявку</button>
+                    </form>
+                </div>
+                <div class="footer__links mob-flex">
+                    <a href="https://t.me/Kolesnikov15"><img src="img/telegram.svg" alt="telegram"></a>
+                    <a href="https://instagram.com/kolesnikov.vd?utm_medium=copy_link"><img src="img/instagram.png" alt="instagram"></a>
+                    <a href="https://wa.me/79371234333"><img src="img/phone.svg" alt="phone"></a>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+        </div>
+        <div class="modal__wrapper">
+            <div class="modal__item">Ваша заявка успешно отправлена!<div class="modal__close">✕</div></div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

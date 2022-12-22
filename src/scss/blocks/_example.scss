@@ -1,0 +1,43 @@
+.example {
+    padding: 75px 0;
+    &__img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        &.w30 {
+            width: 30%;
+        }
+        &.w70 {
+            width: 70%;
+        }
+    }
+    &__text {
+        margin-top: 75px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 18px;
+        color: $main-text;
+        a {
+            color: $second-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .example {
+        padding: 60px 0;
+        &__img {
+            &.w30 {
+                width: 100%;
+            }
+            &.w70 {
+                width: 100%;
+            }
+        }
+        &__text {
+            margin-top: 55px;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,259 @@
+.footer {
+    padding: 140px 0 80px 0;
+    color: $main-text;
+    &__line {
+        width: 100%;
+        height: 1px;
+        background-color: #9C9A9A;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__text {
+        margin-top: 30px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &__questions {
+        padding-bottom: 135px;
+        padding-right: 115px;
+    }
+    &__links {
+        margin-top: 40px;
+        display: flex;
+        img {
+            max-width: 25px;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #575757;
+            border-radius: 100%;
+            margin-right: 50px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: $second-color;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 55px;
+        margin-bottom: 70px;
+    }
+    &__choise {
+        width: 400px;
+        border-bottom: 2px solid #C0C0C0;
+        padding: 8px;
+        padding-left: 40px;
+        font-weight: normal;
+        font-size: 16px;
+        position: relative;
+        ul {
+            transition: all 0.5s ease-in-out; 
+            height: 0;
+            margin: 0;
+            overflow: hidden;
+            &.active {
+                height: auto;
+                overflow: visible;
+                margin-top: 40px;
+                margin-bottom: 30px;
+           }
+        }
+        li {
+            margin-bottom: 10px;
+            font-weight: normal;
+            font-size: 16px;
+            color: #E7E7E7;
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            &.active {
+                text-decoration: underline;
+            }
+        }
+        div {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            margin-left: 15px;
+            width: 12px;
+            height: 8px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url(../img/smile-3.svg) center (center/cover) no-repeat;
+            // top: 50%;
+            // transform: translateY(-50%);
+            top: 7px;
+            left: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__input {
+        position: relative;
+        margin-bottom: 50px;    
+        input {
+            border-radius: 0;
+            color: $main-text;
+            border: none;
+            background: none;
+            border-bottom: 2px solid #C0C0C0;
+            padding: 8px;
+            padding-left: 40px;
+            font-weight: normal;
+            font-size: 16px;
+            width: 400px;
+            &::placeholder {
+                color: $main-text;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url(../img/smile-1.svg) center (center/cover) no-repeat;
+            // background-color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+        &:nth-child(2) {
+            &::before {
+                background: url(../img/smile-2.svg) center (center/cover) no-repeat;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        &__questions {
+            padding-bottom: 80px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding-top: 60px;
+        &__questions {
+            padding-bottom: 60px;
+            padding-right: 60px;
+        }
+        &__input {
+            input {
+                width: 320px;
+            }
+        }
+        &__bth {
+            margin-top: 45px;
+            margin-bottom: 50px;
+        }
+        &__choise {
+            width: 320px;
+            ul {
+                &.active {
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        h2 {
+            padding:0 40px;
+        }
+        &__text {
+            padding: 0 40px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__links {
+            a {
+                margin-right: 40px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    background-color: #575757;
+                }
+            }
+        }
+        &__btn {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__questions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 0;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .footer {
+        &__links:not(.mob-flex) {
+            display: none;
+        }
+        &__btn {
+            margin-bottom: 30px;
+        }
+        &__text {
+            text-align: center;
+            padding: 0;
+            font-size: 14px;
+        }
+        h2 {
+            text-align: center;
+            padding: 0;
+            font-size: 18px;
+        }
+        &__input {
+            input {
+                width: 280px;
+            }
+        }
+        &__choise {
+            width: 280px;
+        }
+    }
+}

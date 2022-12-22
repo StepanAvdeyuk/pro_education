@@ -1,0 +1,162 @@
+.technology {
+    padding: 145px 0 175px 0;
+    background-color: $main-bg;
+    color: $main-text;
+    &__play {
+        img {
+            max-width: 65px;
+        }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        pointer-events: none;
+        display: none;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        background: url(../img/videobg.jpg) center (center/cover) no-repeat;
+        &.bg2 {
+            background: url(../img/videobg-2.jpg) center (center/cover) no-repeat;  
+        }
+        &.bg3 {
+            background: url(../img/videobg-3.jpg) center (center/cover) no-repeat;  
+        }
+        &.bg4 {
+            background: url(../img/eztargetbg.png) center 63%/cover no-repeat;
+        }
+        &.bg5 {
+            background: url(../img/videobg-4.jpg) center (center/cover) no-repeat;  
+        }
+        width: 100%;
+        padding: 40px 100px;
+        color: $main-text;
+        span {
+            font-weight: 600;
+            font-size: 24px;
+            color: $main-text;
+        }
+        p {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-top: 120px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    &__text {
+        text-align: center;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 20px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .technology {
+        padding-top: 115px;
+        padding-bottom: 135px;
+        &__wrapper {
+            width: 90%;
+            position: relative;
+        }  
+        &__title {
+            margin-top: 90px;
+        }
+        &__text {
+            padding: 0 90px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .technology {
+        padding-top: 60px;
+        padding-bottom: 70px;
+        &__wrapper {
+            padding: 25px 40px;
+        }
+        &__title {
+            margin-top: 60px;
+        }
+        &__text {
+            margin-top: 16px;
+            padding: 0 40px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .technology {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        &__wrapper {
+            padding: 20px 30px;
+            p {
+                text-align: center;
+                padding: 0 20px;
+            }
+            &.bg4 {
+                background: url(../img/eztargetbg-mob.png) center center/cover no-repeat;
+            }
+            &.bg5 {
+                background: url(../img/formografbg-mob.jpg) center center/cover no-repeat;
+            }
+        }
+        &__title {
+            margin-top: 40px;
+        }
+        &__text {
+            padding: 0 58px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .technology {
+        &__wrapper {
+            background: url(../img/work-3.jpg) center (center/cover) no-repeat;
+            &.bg2 {
+                background: url(../img/work-2-mob.jpg) center (center/cover) no-repeat;
+            } 
+            &.bg3 {
+                background: url(../img/work-3-mob.jpg) center (center/cover) no-repeat;  
+            }
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__text {
+            font-size: 14px;
+            padding: 0;
+        }
+        &__play {
+            pointer-events: all;
+            display: block;
+        }
+        &__wrapper {
+            span {
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 300px;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+    }
+}

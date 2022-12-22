@@ -1,0 +1,385 @@
+.works {
+    padding-top: 115px;
+    padding-bottom: 100px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            margin-top: 8px;
+            color: $main-text;
+            font-weight: normal;
+            font-size: 18px;
+        }
+    }
+    &__slider {
+        margin-top: 55px;
+        &-item {
+            border: none;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 45px;
+            padding-bottom: 40px;
+            height: 575px;
+            width: 365px;
+            background: url(../img/work-1.jpg) center (2%/cover) no-repeat;
+            &.bg2 {
+                background: url(../img/work-2.jpg) center (center/cover) no-repeat; 
+            }
+            &.bg3 {
+                background: url(../img/work-3.jpg) center (center/cover) no-repeat; 
+            }
+            &.bg4 {
+                background: url(../img/eztargetbg-mob.png) center (center/cover) no-repeat; 
+            }
+            &.bg5 {
+                background: url(../img/work-5.jpg) center (center/cover) no-repeat; 
+            }
+            &.bg6 {
+                background: url(../img/work-6.jpg) center (center/cover) no-repeat; 
+            }
+            &.bg7 {
+                background: url(../img/work-7.jpg) center (center/cover) no-repeat; 
+            }
+            &.bg8 {
+                background: url(../img/formografbg.jpg) center (center/cover) no-repeat; 
+            }
+            &.bg9 {
+                background: url(../img/arteastbg.jpg) center (center/cover) no-repeat; 
+            }
+            &.bg10 {
+                background: url(../img/brynnerbg.jpg) center (center/cover) no-repeat;
+            }
+            &.bg11 {
+                background: url(../img/biodivanbg.jpg) center (center/cover) no-repeat;
+            }
+        }
+        &-name {
+            padding: 0 55px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            color: $main-text;
+        }
+        &-text {
+            padding: 0 26px;
+            text-align: center;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: $main-text; 
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .works {
+        padding: 80px 0; 
+        &__slider {
+            &-item {
+                width: 310px;
+                height: 480px;
+                padding-bottom: 25px;
+            }
+            &-text {
+                padding: 0 15px;
+            }
+            &-name {
+                font-size: 18px;
+                padding: 0 30px;
+            }
+        }
+    }
+    .slick-next {
+        right: 430px;
+    }
+    .slick-prev {
+        left: 420px;
+    }
+    .slick-dots {
+        top: -62px;
+        left: 420px;
+        width: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+    .works {
+        padding: 50px 0; 
+        &__header {
+            p {
+                font-size: 14px;
+                margin-top: 4px;
+            }
+        }
+        &__btn {
+            width: 200px !important;
+        }
+        &__slider {
+            margin-top: 40px;
+            &-item {
+                width: 345px;
+                height: 420px;
+                padding-bottom: 25px;
+            }
+        }
+    }
+    .slick-next {
+        right: 280px;
+        top: -75px;
+    }
+    .slick-prev {
+        left: 320px;
+        top: -75px;
+    }
+    .slick-dots {
+        top: -44px;
+        left: 320px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .works {
+        padding: 40px 0; 
+        padding-bottom: 120px;
+        &__slider {
+            &-item {
+                height: 470px;
+            }
+        }
+    }
+    .slick-next {
+        right: 40%;
+        top: 520px;
+    }
+    .slick-prev {
+        left: 40%;
+        top: 520px;
+    }
+    .slick-dots {
+        top: 560px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 260px;
+    }
+    .slick-initialized .slick-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .works {
+        padding-bottom: 60px;
+        &__btn {
+            display: none;
+        }
+        .mob-s {
+            margin: 0 auto;
+            margin-top: 170px;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        &__header {
+            display: block;
+        }
+        &__slider {
+            &-item {
+                width: 310px;
+                height: 450px;
+            }
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+    .slick-next {
+        right: 33%;
+    }
+    .slick-prev {
+        left: 33%;
+    }
+    .slick-dots {
+        top: 570px;
+    }
+}
+
+.works-page {
+    &.works {
+        padding-top: 75px;
+        padding-bottom: 300px;
+    }
+    .works {
+        &__header {
+            justify-content: center;
+            p {
+                display: none;
+            }
+        }
+        &__slider {
+            margin-top: 110px;
+            &-item {
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .slick-dots {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1350px;
+    }
+    .slick-next {
+        right: 44%;
+        top: 1300px;
+    }
+    .slick-prev {
+        left: 44%;
+        top: 1300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .works-page {
+        &.works {
+            padding-top: 55px;
+            padding-bottom: 180px;
+        }
+        .works {
+            &__slider {
+                margin-top: 80px;
+                &-item {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .slick-dots {
+            top: 1100px;
+        }
+        .slick-next {
+            right: 44%;
+            top: 1050px;
+        }
+        .slick-prev {
+            left: 44%;
+            top: 1050px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .works-page {
+        .works {
+            &__slider {
+                &-item {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .slick-dots {
+            top: 1000px;
+            width: 300px;
+        }
+        .slick-next {
+            right: 42%;
+            top: 950px;
+        }
+        .slick-prev {
+            left: 42%;
+            top: 950px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .works-page {
+        .slick-initialized .slick-slide {
+            flex-wrap: wrap;
+        }
+        &.works {
+            padding-top: 20px;
+        }
+        .works {
+            &__slider {
+                margin-top: 40px;
+                &-item {
+                    width: 260px;
+                    height: 400px;
+                    margin-bottom: 10px;
+                }
+                &-name {
+                    font-size: 16px;
+                }
+                &-text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .slick-dots {
+            top: 950px;
+            width: 260px;
+        }
+        .slick-next {
+            right: 38%;
+            top: 900px;
+        }
+        .slick-prev {
+            left: 38%;
+            top: 900px;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .works-page {
+        .works__slider-item.bg8 {
+            background: url(../img/formograf-mob.jpg) center (center/cover) no-repeat;
+        } 
+    }
+    .works-page {
+        .works {
+            &__header {
+                p {
+                    display: block;
+                }
+            }
+            &__slider {
+                &-item {
+                    width: 95%;
+                    height: 305px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                }
+                &-name {
+                    font-size: 18px;
+                    padding: 0 15px;
+                }
+                &-text {
+                    display: none;
+                }
+            }
+        }
+        .slick-dots {
+            top: 750px;
+            width: 240px;
+        }
+        .slick-next {
+            right: 32%;
+            top: 700px;
+        }
+        .slick-prev {
+            left: 32%;
+            top: 700px;
+        }
+    }
+}
