@@ -4,400 +4,425 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web agency</title>
+    <title>ПРО Образование</title>
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
-
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="KOLESNIKOV DEVELOPMENT - Web agency">
-    <meta name="description" content="Создание Landing-Page, корпоративного сайта, интернет-магазина, портала и других много и одностраничных сайтов.">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kolesnikov.dev/">
-    <meta property="og:title" content="KOLESNIKOV DEVELOPMENT - Web agency">
-    <meta property="og:description" content="Создание Landing-Page, корпоративного сайта, интернет-магазина, портала и других много и одностраничных сайтов.">
-    <meta property="og:image" content="./img/img-meta.jpg">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://kolesnikov.dev/">
-    <meta property="twitter:title" content="KOLESNIKOV DEVELOPMENT - Web agency">
-    <meta property="twitter:description" content="Создание Landing-Page, корпоративного сайта, интернет-магазина, портала и других много и одностраничных сайтов.">
-    <meta property="twitter:image" content="./img/img-meta.jpg">
+    <link rel="stylesheet" href="css/style-index.min.css">
+    <script defer src="js/script.js"></script>
 </head>
-<body data-nav="1">
-    <header class="header" id="top">
+<body>
+
+    <header>
         <div class="container">
             <div class="header__wrapper">
-                <a href="./index.html" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="#helper" class="active">Главная</a></li>
-                        <li><a href="#tech">Технологии</a></li>
-                        <li><a href="#works">Наши работы</a></li>
-                        <li><a href="#about">О нас</a></li>
-                    </ul>
-                </nav>   
-                <div class="header__language"><span class="active">RU</span> | <a href="./web-agency_en.html"><span>ENG</span></a></div>
+                <img src="img/logo.svg" class="header__logo" alt="logotype">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="./catalog.html">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="./platform.html">Образовательная платформа</a>
+                    </li>
+                    <li>
+                        <a href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
                 <div class="header__burger">
                     <div></div>
                     <div></div>
                     <div></div>
+                    <div></div>
                 </div>
-                <div class="header__sidenav">
-                    <div class="header__sidenav-wrapper">
-                        <a href="#helper">Главная</a>
-                        <a href="#tech">Технологии</a>
-                        <a href="#works">Наши работы</a>
-                        <a href="#about">О нас</a>
+                <div class="header__phone">
+                    <div class="header__phone-link">
+                        <img src="img/phone.svg" alt="phone-logo">
+                        <a href="tel:+78005007777">+7 (800) 500-77-77</a>
                     </div>
-                    <div class="header__sidenav-close">✕</div>
+                    <div class="header__phone-text">Заказать звонок</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="helper dark" id="helper" data-active="0">
+    <div class="header__sidemenu">
+        <ul>
+            <li>
+                <a href="#" class="active">Главная</a>
+            </li>
+            <li>
+                <a href="./catalog.html">Услуги</a>
+            </li>
+            <li>
+                <a href="./platform.html">Образовательная платформа</a>
+            </li>
+            <li>
+                <a href="./contacts.html">Контакты</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="bg__blurs">
+        <img src="img/bg-blur-1.png" id="bg-blur-1">
+        <img src="img/bg-blur-2.png" id="bg-blur-2">
+        <img src="img/bg-blur-3.png" id="bg-blur-3">
+        <img src="img/bg-blur-4.png" id="bg-blur-4">
+        <img src="img/bg-blur-5.png" id="bg-blur-5">
+        <img src="img/bg-blur-6.png" id="bg-blur-6">
+        <img src="img/bg-blur-7.png" id="bg-blur-7">
+    </div>
+
+
+    <section class="about">
         <div class="container">
-            <h2 class="title helper__title">Твой <span>Digital-партнер</span><br> в создании веб-платформы</h2>
-            <div class="helper__text">Создание Landing-Page, корпоративного сайта, интернет-<br>магазина, портала и других много и одностраничных сайтов.</div>
-            <div class="helper__text mob">Создание Landing-Page, корпоративного сайта, интернет-магазина, портала и других много и одностраничных сайтов.</div>
-            <a href="#form"><button class="btn helper__btn">Оставить заявку</button></a>
-
-            <div class="helper__item">
-                <div class="helper__img"><img src="img/helper-1.png" alt="icon"></div>
-                <div class="helper__descr">
-                    Квалификация
-                    <p>Знания специалистов из нашей команды оцениваются преимущественно в Middle и выше. Каждый исполнитель 
-                        постоянно обучается и совершенствуется, что дает нам возможность работать с самыми передовыми 
-                        технологиями, создавать конкурентно сильный дизайн и превосходить ожидания клиента.</p>
-                    <p class="mob">Знания специалистов из нашей команды оцениваются преимущественно в Middle и выше. <br><br> Каждый исполнитель 
-                        постоянно обучается и совершенствуется, что дает нам возможность работать с самыми передовыми 
-                        технологиями, создавать конкурентно сильный дизайн и превосходить ожидания клиента.</p>
+            <h1 class="about__title"><span>Общество <img src="img/dots.svg" class="about__dots" alt="dots"></span> с&nbsp;ограниченной ответственностью <span class="fw600">«ПРО-Образование»</span></h1>
+            <div class="about__descr">Lorem Ipsum has been the industry's standard dummy 
+                text ever since the 1500s, when an unknown printer took
+                 a galley of type and scrambled it to make a type specimen<img src="img/dots-2.svg" class="about__dots-2" alt="dots"></div>
+            <div class="about__btn">
+                <button>Оставить заявку</button> 
+                <img src="img/laptop.svg" class="about__laptop" alt="laptop"> 
+                <div class="about__prod">
+                    <span>Разработано более 10 000 
+                        документов,</span> нормативных актов 
+                    и образовательных программ
+                    <img src="img/prod.svg">
                 </div>
-            </div>
-
-            <div class="helper__item">
-                <div class="helper__img"><img src="img/helper-2.png" alt="icon"></div>
-                <div class="helper__descr">
-                    Наша философия
-                    <p>В фундаменте правил компании — жизненные ценности основателей. Главное — честность и ответственность 
-                        перед клиентом. Инициативность при выполнении заказа! Как правило, наши клиенты становятся нашими 
-                        долгосрочными партнерами. 
-                    </p>
-                    <p class="mob">В фундаменте правил компании — жизненные ценности основателей. <br><br> Главное — честность и ответственность 
-                        перед клиентом. Инициативность при выполнении заказа! Как правило, наши клиенты становятся нашими 
-                        долгосрочными партнерами. 
-                    </p>
-                </div>
-            </div>
-
-            <div class="helper__item">
-                <div class="helper__img"><img src="img/helper-3.png" alt="icon"></div>
-                <div class="helper__descr">
-                    Работаем с проектами из разных стран
-                    <p>Мы готовы вести проекты на 5 языках: русском, английском, португальском, французском и испанском. Нам 
-                        не составит труда общаться с иностранными клиентами без каких-либо языковых проблем!</p>
-                    <p class="mob">Мы готовы вести проекты на 5 языках: русском, английском, португальском, французском и испанском. Нам 
-                        не составит труда общаться с иностранными клиентами без каких-либо языковых проблем!</p>
-                </div>
-            </div>
+            </div>   
         </div>
     </section>
-    
-    <section class="tech semi-dark" id="tech" data-active="1">
+
+    <section class="niches">
         <div class="container">
-            <h2 class="title">Технологии</h2>
-            <div class="tech__subtitle">Технологии, с которыми мы постоянно работаем</div>
-
-            <div class="tech__slider-change">
-                <div class="tech__slider-name">
-                    <span>BackEnd</span>
-                    <span>FrontEnd</span>
-                    <span>Design</span>
+            <div class="niches__title">Мы уже подготовили <span>документы для множества ниш</span></div>
+            <div class="niches__content">
+                <div class="niches__content-item">
+                    <div class="niches__item">Для детсадов</div>
+                    <div class="niches__item">Для автошкол</div>
+                    <div class="niches__item">Для школ</div>
+                    <div class="niches__item">Для СПО</div>
                 </div>
-                <div class="tech__slider-choise">
-                    <div class="tech__slider-slide active" data-slide="0"></div>
-                    <div class="tech__slider-slide" data-slide="1"></div>
-                    <div class="tech__slider-slide" data-slide="2"></div>
-                    <div class="tech__slider-line"></div>
+                <div class="niches__content-item">
+                    <div class="niches__item">Для детских образовательных центров</div>
+                    <div class="niches__item">Для спортшкол</div>
+                    <div class="niches__item">Для детских школ искусств</div>
                 </div>
+                <div class="niches__content-item">
+                    <div class="niches__item">Для центров профессионального обучения</div>
+                    <div class="niches__item">Для организаций дополнительного профессионального образования</div>
 
-                <div class="tech__slider-item active">
-                    <div class="tech__slider-text">
-                        <h3>BackEnd</h3>
-                        <p>Внутреннюю часть проекта реализовываем на Python / Go / PHP / JavaScript / C++. Работаем со всеми популярными фреймворками. </p>
-                    </div>
-                    <div class="tech__slider-icons">
-                        <img src="img/backend-1.png" alt="icon">
-                        <img src="img/backend-2.png" alt="icon">
-                        <img src="img/backend-3.png" alt="icon">
-                        <img src="img/backend-4.png" alt="icon">
-                        <img src="img/backend-5.png" alt="icon">
-                        <img src="img/backend-6.png" alt="icon">
-                    </div>
-                </div>
-
-                <div class="tech__slider-item">
-                    <div class="tech__slider-text">
-                        <h3>FrontEnd</h3>
-                        <p>Часть проекта реализовываем на React<br> или AngularJS. Верстка на Gulp.</p>
-                    </div>
-                    <div class="tech__slider-icons">
-                        <img src="img/frontend-1.png" alt="icon">
-                        <img src="img/frontend-2.png" alt="icon">
-                        <img src="img/frontend-3.png" id="gulp" alt="icon">
-                    </div>
-                </div>
-
-                <div class="tech__slider-item">
-                    <div class="tech__slider-text">
-                        <h3>Design</h3>
-                        <p>Для дизайна используем множество программ. Figma, Photoshop, Illustrator и другие.</p>
-                    </div>
-                    <div class="tech__slider-icons">
-                        <img src="img/design-1.png" alt="icon">
-                        <img src="img/design-2.png" alt="icon">
-                        <img src="img/design-3.png" alt="icon">
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="works" id="works" data-active="2">
+    <section class="mission">
         <div class="container">
-            <div class="works__header">
-                <div>
-                    <h2 class="title">Наши работы</h2>
-                    <p>Последние проекты разработанные нами:</p>
+            <h2 class="mission__title">Миссия компании</h2>
+            <div class="mission__content">
+                <div class="mission__left">
+                    <div class="mission__line"></div>
+                    <div class="mission__info">
+                        <img src="img/mission-dot.svg" alt="dot">
+                        <div class="mission__text">Мы делаем доступным и простым правовое 
+                            и методическое сопровождение образовательной 
+                            деятельности без сотни подписок на сайты 
+                            справочных систем.</div>
+                    </div>
+                    <div class="mission__info">
+                        <img src="img/mission-dot.svg" alt="dot">
+                        <div class="mission__text">Мы поможем быстро и правильно организовать 
+                            образовательный бизнес, а затем возьмем на себя 
+                            всю документацию и предоставим бесплатную 
+                            круглосуточную консультационную поддержку.</div>
+                    </div>
+                    <div class="mission__info">
+                        <img src="img/mission-dot.svg" alt="dot">
+                        <div class="mission__text">Теперь эксперты надзора в сфере образования 
+                            работают на Вас!</div>
+                    </div>
                 </div>
-                <a href="./works.html"><button class="btn w-268 works__btn">Посмотреть все</button></a>
+                <div class="mission__right">
+                    <img src="img/mission-pic.svg">
+                </div>
             </div>
-            <div class="works__slider">
-                <div>
-                    <a href="./casetg.html" class="works__slider-item">
-                        <div class="works__slider-name">Конструктор чат-ботов в Telegram</div>
-                        <div class="works__slider-text">Конструктор, который не падает 
-                        при пиковых нагрузках и отличается 
-                        большим функционалом</div>
-                    </a>
+        </div>
+        
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <div class="info__title">
+                    Lorem Ipsum has been <span>the industry's standard dummy</span> 
                 </div>
-                <div>
-                    <a href="./caseinvest.html" class="works__slider-item bg2">
-                        <div class="works__slider-name">Платформа для проекта 
-                            по инвестициям</div>
-                        <div class="works__slider-text">Разработка BackEnd / FrontEnd 
-                            части платформы для проекта по 
-                            инвестициям совместно с Vaaks Design
+                <div class="info__descr">Lorem Ipsum has been the industry's standard dummy text ever 
+                    since the 1500s, when an unknown</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__title">
+                Наши <span>преимущества</span>
+            </div>
+            <div class="advantages__descr">
+                Мы первая организация в Ульяновской области, которая предлагает полное правовое, 
+                документационное и методическое сопровождение образовательной деятельности
+            </div>
+            <div class="advantages__content">
+                <div class="advantages__content-item">
+                    <img src="img/adv-1.jpg">
+                    <span>Профессионалы</span>
+                    <p>На Вас работает команда 
+                        отраслевых юристов 
+                        и экспертов в области 
+                        образовательного права</p>
+                </div>
+                <div class="advantages__content-item">
+                    <img src="img/adv-2.jpg">
+                    <span>Гарантия результата</span>
+                    <p>Отвечаем за результат 
+                        и качество – при 
+                        подключении полного 
+                        сопровождения 
+                        готовы взять оплату 
+                        штрафов на себя</p>
+                </div>
+                <div class="advantages__content-item">
+                    <img src="img/adv-3.jpg">
+                    <span>Удобные условия</span>
+                    <p>Бережно ценим Ваше 
+                        время и экономим Ваши
+                        деньги</p>
+                </div>
+                <div class="advantages__content-item">
+                    <img src="img/adv-4.jpg">
+                    <span>Конфиденциальность</span>
+                    <p>Гарантируем 
+                        конфиденциальность
+                        ваших данных</p>
+                </div>
+            </div>
+            <div class="advantages__connect">
+                <div class="advantages__connect-title">Постоянно на связи</div>
+                <div class="advantages__connect-descr">Поддержка нон-стоп – 24/7 365 дней - не болеем и не уходим в отпуск</div>
+                <img src="img/adv-5.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="container">
+            <div class="slider__title">
+                Отзывы наших клиентов
+            </div>
+            <div class="slider__descr">
+                Посмотрите что говорят клиенты о сотрудничестве с нами
+            </div>
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                        <div class="slider__item-person">
+                            <img src="img/ava.png">
+                            <div>
+                                <span>Егор Попов</span>
+                                <p>@itspopov</p>
                             </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="./caseyt.html" class="works__slider-item bg3">
-                        <div class="works__slider-name">Парсер статистики для YouTube-школы</div>
-                        <div class="works__slider-text">Сервис позволяет динамически
-                            анализировать аккаунт на YouTube для 
-                            наблюдения за изменением статистики</div>
-                    </a>
-                </div>
-                <div>
-                    <a href="./caseeztarget.html" class="works__slider-item bg4">
-                        <div class="works__slider-name">Портал для размещения кейсов таргетологам</div>
-                        <div class="works__slider-text">Разработка Frontend части проекта и ведение Project Managment.</div>
-                    </a>
-                </div>
-                <div>
-                    <a href="./nutrition.html" class="works__slider-item bg5">
-                        <div class="works__slider-name">Сервис постинга статей в TG
                         </div>
-                        <div class="works__slider-text">Приватный publishing сервис в TG</div>
-                    </a>
-                </div>
-                <div>
-                    <a href="./flopi.html" class="works__slider-item bg6">
-                        <div class="works__slider-name">Создание Landing page для стартапа flopi.me
+                        <div class="slider__item-text">
+                            Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас очень соответствующий условий активизации. Значимость этих проблем настолько очевидна.
                         </div>
-                        <div class="works__slider-text">Одностраничный сайт для стартапа мобильного приложения знакомств</div>
-                    </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="./frangipani.html" class="works__slider-item bg7">
-                        <div class="works__slider-name">Интернет-магазин женской одежды Frangipani
+                <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                        <div class="slider__item-person">
+                            <img src="img/ava.png">
+                            <div>
+                                <span>Егор Попов</span>
+                                <p>@itspopov</p>
+                            </div>
                         </div>
-                        <div class="works__slider-text">Сайт на Wordpress для интернет-магазина женской одежды</div>
-                    </a>
+                        <div class="slider__item-text">
+                            Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас очень соответствующий условий активизации. Значимость этих проблем настолько очевидна.
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="./formograf.html" class="works__slider-item bg8">
-                        <div class="works__slider-name">Платформа проверки подписки на TG канал Formograf
+                <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                        <div class="slider__item-person">
+                            <img src="img/ava.png">
+                            <div>
+                                <span>Егор Попов</span>
+                                <p>@itspopov</p>
+                            </div>
                         </div>
-                        <div class="works__slider-text">Интеграция с Publishing сервисом, созданным для клиента ранее</div>
-                    </a>
+                        <div class="slider__item-text">
+                            Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас очень соответствующий условий активизации. Значимость этих проблем настолько очевидна.
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="./arteast.html" class="works__slider-item bg9">
-                        <div class="works__slider-name">Landing page страница для компании ART EAST
+                <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                        <div class="slider__item-person">
+                            <img src="img/ava.png">
+                            <div>
+                                <span>Егор Попов</span>
+                                <p>@itspopov</p>
+                            </div>
                         </div>
-                        <div class="works__slider-text">Одностраничный сайт для компании ART EAST в формате коммерческого предложения</div>
-                    </a>
-                </div>
-                <div>
-                    <a href="./brynner.html" class="works__slider-item bg10">
-                        <div class="works__slider-name">Конструктор сайтов для ЖК комплексов
+                        <div class="slider__item-text">
+                            Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас очень соответствующий условий активизации. Значимость этих проблем настолько очевидна.
                         </div>
-                        <div class="works__slider-text">Разработана FrontEnd часть проекта, который позволяет потенциальным покупателям недвижимости - подобрать свою будущую квартиру</div>
-                    </a>
-                </div>
-                <div>
-                    <a href="./biodivan.html" class="works__slider-item bg11">
-                        <div class="works__slider-name">Производство мягкой мебели
-                        </div>
-                        <div class="works__slider-text">Сайт на Wordpress для компании "BIODIVAN"</div>
-                    </a>
+                    </div>
                 </div>
             </div>
-            <a href="./works.html"><button class="btn w-268 mob-s">Посмотреть все</button></a>
         </div>
     </section>
 
-    <section class="why semi-dark" id="about" data-active="3">
+    <section class="director">
         <div class="container">
-            <div class="why__wrapper">
-                <div class="why__left">
-                    <h2 class="title">Почему клиенты выбирают работать именно с нами?</h2>
-                    <p>Наша команда — это Front / Back программисты, дизайнеры и project менеджеры с опытом работы преимущественно выше middle. Мы решаем практически любые веб задачи.  От разработки простого чат-бота до веб-платформы для стартапа.  В каждый проект мы погружаемся на максимум, поэтому одновременно работаем с небольшим количеством заказом. В среднем до 5 проектов одновременно. Руководители компании включены в каждый проект лично.</p>
-                    <div class="why__text">
-                        Основа нашей работы — это партнерство с клиентом. 
-                        Вы получаете не просто компанию, которая реализует проект в срок. А компаньона, который вовремя обратит внимание на пробелы в техническом задании и будет на связи в мессенджере. Хотя с таким чистым кодом Вы забудете об ошибках и обращениях в тех. поддержку.  Мы считаем такой подход наиболее правильным! Клиентам легко и приятно работать с нами.
-                    </div>
-                    <div class="why__text">
-                        Первый заказ был выполнен в 2018 году
-                    </div>
-                    <div class="why__text">
-                        Последняя работа: <a href="./caseinvest.html">“Платформа по инвестициям”</a>
-                    </div>
-                    <a href="./caseinvest.html"><button class="btn why__btn">Смотреть кейс</button></a>
-                    <img src="img/photo.jpg" alt="photo mob">
+            <div class="director__wrapper">
+                <div class="director__left">
+                    <img src="img/director-pic.jpg">
                 </div>
-                <div class="why__right">
-                    <!-- <div class="why__text photo-text">
-                        Основа нашей работы — это партнерство с клиентом. 
-                        Вы получаете не просто компанию, которая реализует проект в срок. А компаньона, который вовремя обратит внимание на пробелы в техническом задании и будет на связи в мессенджере. Хотя с таким чистым кодом Вы забудете об ошибках и обращениях в тех. поддержку.  Мы считаем такой подход наиболее правильным! Клиентам легко и приятно работать с нами.
-                    </div> -->
-                    <img src="img/photo.jpg" alt="photo">
-                    <!-- <img src="img/photo.jpg" class="mob" alt="photo"> -->
-                    <!-- <div class="why__text mob">
-                        Основа нашей работы — это партнерство с клиентом. 
-                        Вы получаете не просто компанию, которая реализует проект в срок. А компаньона, который вовремя обратит внимание на пробелы в техническом задании и будет на связи в мессенджере. Хотя с таким чистым кодом Вы забудете об ошибках и обращениях в тех. поддержку.  Мы считаем такой подход наиболее правильным! Клиентам легко и приятно работать с нами.
-                    </div> -->
+                <div class="director__right">
+                    <div class="director__name">Черемных Анна Владимировна</div>
+                    <div class="director__info">
+                        Директор и учредитель ООО «ПРО-Образование»
+                        <div class="director__line"></div>
+                    </div>
+                    <div class="director__content">
+                        <div class="director__content-item">
+                            <img src="img/mission-dot.svg">
+                            <p>Опыт работы с 2003 года в контрольно-надзорных 
+                                органах в сфере образования</p>
+                        </div>
+                        <div class="director__content-item">
+                            <img src="img/mission-dot.svg">
+                            <p>Автор свыше 20 работ по проблемам оценки 
+                                образовательной деятельности, управления 
+                                образованием</p>
+                        </div>
+                        <div class="director__content-item">
+                            <img src="img/mission-dot.svg">
+                            <p>Автор пособий, методических рекомендаций 
+                                по организации образовательной деятельности 
+                                и соблюдению обязательных требований.</p>
+                        </div>
+                        <div class="director__content-item">
+                            <img src="img/mission-dot.svg">
+                            <p>Эксперт в области образовательного права</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq dark">
+    <section class="news">
         <div class="container">
-            <div class="faq__wrap">
-                <div>
-                    <h2 class="title">Частые вопросы</h2>
-                    <p class="faq__subtitle">Вопросы, которые чаще всего задают наши клиенты</p>
+            <div class="news__title">Полезные новости</div>
+            <div class="news__descr">Будь в курсе всех событий ознакомившись с нашими новостями</div>
+            <div class="news__content">
+                <div class="news__content-item">
+                    <img src="img/news-pic.jpg" alt="">
+                    <span>Заголовок</span>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing 
+                        Lorem Ipsum passages, and more 
+                        recently with desktop publishing</p>
+                    <a href="#">Подробнее</a>
                 </div>
-                <a href="#form"><button class="btn w-268">Задать вопрос</button></a>
+                <div class="news__content-item">
+                    <img src="img/news-pic.jpg" alt="">
+                    <span>Заголовок</span>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing 
+                        Lorem Ipsum passages, and more 
+                        recently with desktop publishing</p>
+                    <a href="#">Подробнее</a>
+                </div>
+                <div class="news__content-item">
+                    <img src="img/news-pic.jpg" alt="">
+                    <span>Заголовок</span>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing 
+                        Lorem Ipsum passages, and more 
+                        recently with desktop publishing</p>
+                    <a href="#">Подробнее</a>
+                </div>
             </div>
-            <div class="faq__wrapper">
-                <div class="faq__line"></div>
-
-                <div class="faq__item">
-                    <p>А сайт мне понравится?</p>
-                    <div class="faq__link">Читать ответ</div>
-                    <div class="faq__answer">Однозначно. Первый этап разработки - согласование дизайна и создание прототипа. Уже на этом этапе мы доведем все до идеала, чтобы визуал сайта Вас устраивал полностью.</div>
-                </div>
-                <div class="faq__item">
-                    <p>Как в дальнейшем мне поддерживать сайт?</p>
-                    <div class="faq__link">Читать ответ</div>
-                    <div class="faq__answer">Мы разработаем админ-панель, на которой вы сможете сами управлять сайтом без знания программирования. Это просто и удобно. А если понадобится его кардинально изменить — мы всегда на связи.</div>
-                </div>
-                <div class="faq__item">
-                    <p>Что будет нужно от меня?</p>
-                    <div class="faq__link">Читать ответ</div>
-                    <div class="faq__answer">Сначала мы с вами создадим техническое задание. На это уйдет 1-3 созвона по часу.
-                        <br><br>Далее мы запросим у вас контент на сайт. А также понадобится несколько согласований черновика продукта и внесения дополнений и правок.<br><br> Мы всегда готовы подстроиться под ваш график и занятость. Если нужно, предоставить услуги копирайтера или корректора.
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <p>Подписание договора</p>
-                    <div class="faq__link">Читать ответ</div>
-                    <div class="faq__answer">Для каждого проекта мы составляем договор, к которому прикрепляем техническое задание, прописываем дедлайн, этапы оплаты и остальные юридические нюансы. Мы всегда готовы составить договор под вас. К примеру, добавить новые пункты. Уверены, что никаких проблем и задержек на этом этапе не будет.</div>
-                </div>
-
+            <div class="news__btn">
+                <button>Больше новостей</button>
             </div>
-            <button class="btn w-268 mob-s">Задать вопрос</button>
         </div>
     </section>
 
-    <footer class="footer semi-dark" id="form">
+    <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                <div class="footer__questions">
-                    <h2 class="title">У Вас остались какие-либо вопросы?</h2>
-                    <div class="footer__text">Оставьте ваши данные, мы свяжемся с Вами и ответим на все интересующие Вас вопросы. </div>
-                    <div class="footer__links">
-                        <a href="https://t.me/Kolesnikov15" target="_blank"><img src="img/telegram.svg" alt="telegram"></a>
-                        <a href="https://instagram.com/kolesnikov.vd?utm_medium=copy_link" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-                        <a href="https://wa.me/79371234333" target="_blank"><img src="img/phone.svg" alt="phone"></a>
+                <img src="img/logo.svg" class="footer__logo" alt="logotype">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Образовательная платформа</a>
+                    </li>
+                    <li> 
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer__phone">
+                    <div class="footer__phone-link">
+                        <img src="img/phone.svg" alt="phone-logo">
+                        <a href="tel:+78005007777">+7 (800) 500-77-77</a>
                     </div>
-                </div>
-                <div class="footer__form">
-                    <form>
-                        <div class="footer__input">
-                            <input type="text" name="name" placeholder="Введите Ваше имя">
-                        </div>
-                        <div class="footer__input">
-                            <input type="tel" name="phone" placeholder="Введите Ваш телефон">
-                        </div>
-                        <div class="footer__choise">
-                            <div>
-                                <p>Выберите категорию проекта</p>
-                                <img src='img/arrow.svg' alt="arrow">
-                            </div>
-                            <ul>
-                                <li>Одностраничный сайт</li>
-                                <li>Веб-платформа</li>
-                                <li>Интернет-магазин</li>
-                                <li>Корпоративный сайт</li>
-                                <li>Портал</li>
-                                <li>Другое</li>
-                                <li>Не могу определиться</li>
-                            </ul>
-                        </div>
-                        <button type="submit" class="btn w-268 footer__btn">Отправить заявку</button>
-                    </form>
-                </div>
-                <div class="footer__links mob-flex">
-                    <a href="https://t.me/Kolesnikov15" target="_blank"><img src="img/telegram.svg" alt="telegram"></a>
-                    <a href="https://instagram.com/kolesnikov.vd?utm_medium=copy_link" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-                    <a href="https://wa.me/79371234333" target="_blank"><img src="img/phone.svg" alt="phone"></a>
+                    <div class="footer__phone-text">Заказать звонок</div>
                 </div>
             </div>
-            <div class="footer__line"></div>
-        </div>
-        <div class="modal__wrapper">
-            <div class="modal__item">Ваша заявка успешно отправлена!<div class="modal__close">✕</div></div>
+            <div class="footer__info">
+                <a href="#">Сведения об образовательной организации</a>
+            </div>
         </div>
     </footer>
+
+    <!-- <div class="form__wrapper">
+        <div class="form">
+            <div class="form__title">
+                Всё ещё <span>остались вопросы?</span>
+            </div>
+            <div class="form__descr">
+                Оставьте свои данные и <span>мы свяжемся с вам в течение 15 минут</span>
+            </div>
+            <form>
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="+7 ... ... ...">
+                <button type="submit">Оставить заявку</button>
+            </form>
+        </div>
+    </div> -->
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 
+
     <script type="text/javascript">
         $(document).ready(function(){
-          $('.works__slider').slick({
+          $('.slider__wrapper').slick({
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
-            dots: true,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev down-arrow"><img src="img/arrow.svg"></button>',
+            nextArrow: '<button type="button" class="slick-next down-arrow"><img src="img/arrow.svg"></button>',
             responsive: [
                 {
                 breakpoint: 992,
@@ -418,6 +443,37 @@
         });
     </script>
 
-    <script src="js/script.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.news__content').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: false,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev news-arrow"><img src="img/arrow.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next news-arrow"><img src="img/arrow.svg"></button>',
+        responsive: [
+            {
+            breakpoint: 992,
+            settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+      });
+    });
+</script>
+
+
+
 </body>
 </html>
