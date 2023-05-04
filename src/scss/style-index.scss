@@ -77,22 +77,24 @@ img {
 @import './blocks/bgblurs';
 
 .about {
-    padding-top: 25px;
+    padding-top: 75px;
     &__title {
         font-weight: 400;
         width: 560px;
-        font-size: 50px;
-        line-height: 65px;
+        font-size: 20px;
+        line-height: 36px;
         color: #fff;
         span {
             position: relative;
             &.fw600 {
                 font-weight: 600;
+                font-size: 50px;
+                line-height: 65px;
             }
         }
     }
     &__descr {
-        margin-top: 55px;
+        margin-top: 85px;
         width: 530px;
         font-weight: 400;
         font-size: 18px;
@@ -108,6 +110,7 @@ img {
         left: -55px;
     }
     &__dots {
+        display: none;
         position: absolute;
         width: 70px;
         top: 50%;
@@ -131,13 +134,13 @@ img {
         position: absolute;
         width: 1025px;
         left: 500px;
-        bottom: -50px;
+        bottom: -100px;
         z-index: -1;
     }
     &__prod {
         position: absolute;
         left: 680px;
-        bottom: 90px;
+        bottom: 40px;
         background: #FFFFFF;
         box-shadow: 0px 0px 70px rgba(51, 51, 51, 0.24);
         border-radius: 20px;
@@ -280,7 +283,7 @@ img {
         line-height: 30px;
         color: #fff;
         margin-top: 30px;
-        padding: 0 200px;
+        // padding: 0 200px;
     }
 }
 
@@ -568,8 +571,8 @@ img {
 @media (max-width: 1600px) {
     .about {
         &__title {
-            font-size: 42px;
-            line-height: 52px;
+            font-size: 20px;
+            line-height: 36px;
         }
         &__descr {
             margin-top: 50px;
@@ -592,7 +595,7 @@ img {
             padding: 24px;
             padding-top: 50px;
             width: 370px;
-            bottom: 75px;
+            bottom: 35px;
             left: 660px;
         }
     }
@@ -833,8 +836,8 @@ img {
             display: none;
         }
         &__title {
-            font-size: 36px;
-            line-height: 46px;
+            font-size: 20px;
+            line-height: 26px;
             width: 430px;
         }
         &__descr {
@@ -853,7 +856,8 @@ img {
         }
         &__laptop {
             width: 700px;
-            left: 335px;
+            left: 480px;
+            bottom: -45px;
         }
         &__prod {
             left: 458px;
@@ -1185,8 +1189,13 @@ img {
     .about {
         padding-bottom: 400px;
         &__title {
-            font-size: 32px;
-            line-height: 50px;
+            font-size: 20px;
+            line-height: 26px;
+            span {
+                &.fw600 {
+                    font-size: 32px;
+                }
+            }
         }
         &__descr {
             font-size: 16px;

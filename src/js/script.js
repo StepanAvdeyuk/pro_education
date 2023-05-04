@@ -22,7 +22,26 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-   
+    const btnPopup = document.querySelector('.about__btn button');
+    const popupWrapper = document.querySelector('.form__wrapper');
+    const popupClose = document.querySelector('.form__close');
+    const form = document.querySelector('.form form');
+
+    btnPopup.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupWrapper.classList.add('active');
+    })
+
+    popupClose.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupWrapper.classList.remove('active');
+    })
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        popupWrapper.classList.remove('active');
+    })
+    
 
 
 });
