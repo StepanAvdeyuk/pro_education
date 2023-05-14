@@ -148,6 +148,9 @@ img {
             color: #C7C7F4;
             font-weight: 400;
             font-size: 16px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     &__wrapper {
@@ -293,6 +296,9 @@ img {
             color: #C7C7F4;
             font-weight: 400;
             font-size: 16px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     &__wrapper {
