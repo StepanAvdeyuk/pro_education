@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // const sideNavClose = document.querySelector('.header__sidenav-close');
     const sideNavA = document.querySelectorAll('.header__sidemenu a');
 
-    burger.addEventListener('click', () => {
+    burger?.addEventListener('click', () => {
         sideNav.classList.add('active');
         document.body.style.overflow = "hidden";
     })
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //     sideNav.classList.remove('active');
     //     document.body.style.overflow = "";
     // })
-    sideNavA.forEach(item => {
+    sideNavA?.forEach(item => {
         item.addEventListener('click', () => {
             sideNav.classList.remove('active');
             document.body.style.overflow = "";
@@ -31,28 +31,29 @@ window.addEventListener('DOMContentLoaded', () => {
     const headerPhone = document.querySelector('.header__phone-text');
     const footerPhone = document.querySelector('.footer__phone-text');
 
-    btnPopup.addEventListener('click', (e) => {
+    btnPopup?.addEventListener('click', (e) => {
         e.preventDefault();
         popupWrapper.classList.add('active');
     })
 
-    headerPhone.addEventListener('click', (e) => {
+    headerPhone?.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('header click')
+        popupWrapper.classList.add('active');
+    })
+
+    footerPhone?.addEventListener('click', (e) => {
         e.preventDefault();
         popupWrapper.classList.add('active');
     })
 
-    footerPhone.addEventListener('click', (e) => {
-        e.preventDefault();
-        popupWrapper.classList.add('active');
-    })
 
-
-    popupClose.addEventListener('click', (e) => {
+    popupClose?.addEventListener('click', (e) => {
         e.preventDefault();
         popupWrapper.classList.remove('active');
     })
 
-    form.addEventListener('submit', (e) => {
+    form?.addEventListener('submit', (e) => {
         e.preventDefault();
         popupWrapper.classList.remove('active');
     })
