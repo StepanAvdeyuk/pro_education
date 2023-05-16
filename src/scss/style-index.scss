@@ -2154,9 +2154,11 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     border: none;
     outline: none;
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
     &:hover, &:focus {
         outline: none;
-        background: transparent;
+        // background: transparent;
         color: transparent;
         &:before {
             opacity: $slick-opacity-on-hover;
@@ -2169,6 +2171,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-prev {
     z-index: 2;
+    background-image: url('../img/arrow-prev.svg');
     img {
         transform: rotate(180deg);
     }
