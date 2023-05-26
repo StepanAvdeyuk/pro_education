@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const btnPopup = document.querySelector('.about__btn button');
     const popupWrapper = document.querySelector('.form__wrapper');
+    const btn2Popup = document.querySelector('.license__btn button');
     const popupClose = document.querySelector('.form__close');
     const form = document.querySelector('.form form');
     const headerPhone = document.querySelector('.header__phone-text');
@@ -38,7 +39,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     headerPhone?.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('header click')
+        popupWrapper.classList.add('active');
+    })
+
+    btn2Popup?.addEventListener('click', (e) => {
+        e.preventDefault();
         popupWrapper.classList.add('active');
     })
 
