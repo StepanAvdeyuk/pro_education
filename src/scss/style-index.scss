@@ -1130,6 +1130,7 @@ img {
                 line-height: 30px;
                 color: #fff;
                 margin-bottom: 20px;
+                padding-right: 20px;
             }
             a {
                 text-decoration: underline;
@@ -3171,6 +3172,7 @@ $slick-opacity-not-active: 0.25 !default;
                 margin-top: 40px;
             }
             p {
+                padding-right: 20px;
                 margin-top: 26px;
                 font-weight: 400;
                 font-size: 18px;
@@ -4397,6 +4399,7 @@ $slick-opacity-not-active: 0.25 !default;
         color: #fff;
         width: 580px;
         line-height: 65px;
+        min-height: 220px;
         span {
             font-weight: 600;
         }
@@ -4642,6 +4645,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .economy {
     padding-top: 120px;
+    padding-bottom: 500px;
     &__title {
         font-weight: 400;
         font-size: 36px;
@@ -4659,7 +4663,7 @@ $slick-opacity-not-active: 0.25 !default;
         box-shadow: 0px 0px 80px rgba(24, 25, 83, 0.54);
         border-radius: 20px;
         padding: 65px;
-        width: 720px;
+        // width: 720px;
         margin-top: 70px;
         position: relative;
         &-item {
@@ -4668,6 +4672,8 @@ $slick-opacity-not-active: 0.25 !default;
             line-height: 30px;
             color: #fff;
             display: flex;
+            position: relative;
+            z-index: 2;
             img {
                 width: 26px;
                 height: 26px;
@@ -4681,16 +4687,21 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &__pic {
         position: absolute;
-        left: 250px;
-        bottom: -460px;
+        // left: 250px;
+        left: 50%;
+        transform: translateX(-45%);
+        bottom: -1100px;
     }
 }
 
 .adv {
     padding-top: 120px;
+    padding-bottom: 500px;
     &__title {
         font-weight: 400;
         font-size: 36px;
+        position: relative;
+        z-index: 2;
         line-height: 55px;
         color: #fff;
         text-align: center;
@@ -4700,8 +4711,10 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &__pic {
         position: absolute;
-        bottom: -340px;
-        right: 675px;
+        bottom: -875px;
+        // right: 675px;
+        right: 50%;
+        transform: translateX(20%);
     }
     &__list {
         background: #5C6CF9;
@@ -4709,7 +4722,7 @@ $slick-opacity-not-active: 0.25 !default;
         box-shadow: 0px 0px 80px rgba(24, 25, 83, 0.54);
         border-radius: 20px;
         padding: 65px;
-        width: 720px;
+        // width: 720px;
         margin-top: 70px;
         margin-left: auto;
         position: relative;
@@ -4820,6 +4833,7 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
     .economy {
+        padding-bottom: 260px;
         &__list {
             &-item {
                 font-size: 16px;
@@ -4827,8 +4841,7 @@ $slick-opacity-not-active: 0.25 !default;
             }
         }
         &__pic {
-            left: 398px;
-            bottom: -174px;
+            bottom: -750px;
             width: 1200px;
         }
     }
@@ -4917,6 +4930,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     .adv {
         padding-top: 90px;
+        padding-bottom: 360px;
         &__title {
             font-size: 32px;
             line-height: 46px;
@@ -4927,7 +4941,7 @@ $slick-opacity-not-active: 0.25 !default;
         }
         &__pic {
             width: 980px;
-            bottom: -300px;
+            bottom: -750px;
         }
     }
     .connect {
@@ -4948,6 +4962,9 @@ $slick-opacity-not-active: 0.25 !default;
 @media (max-width: 992px) {
     .license {
         padding-bottom: 350px;
+        &__title {
+            min-height: auto;
+        }
         &__pic {
             left: -40px;
             width: 960px;

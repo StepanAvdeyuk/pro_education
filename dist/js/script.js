@@ -27,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const btnPopup = document.querySelector('.about__btn button');
     const popupWrapper = document.querySelector('.form__wrapper');
     const btn2Popup = document.querySelector('.license__btn button');
+    const btn3Popup = document.querySelector('.connect__btn');
     const popupClose = document.querySelector('.form__close');
     const form = document.querySelector('.form form');
     const headerPhone = document.querySelector('.header__phone-text');
@@ -43,6 +44,11 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     btn2Popup?.addEventListener('click', (e) => {
+        e.preventDefault();
+        popupWrapper.classList.add('active');
+    })
+
+    btn3Popup?.addEventListener('click', (e) => {
         e.preventDefault();
         popupWrapper.classList.add('active');
     })
