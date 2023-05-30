@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     form?.addEventListener('submit', (e) => {
         e.preventDefault();
-        popupWrapper.classList.remove('active');
+        // popupWrapper.classList.remove('active');
     })
     
 
