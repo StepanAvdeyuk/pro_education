@@ -69,6 +69,12 @@ img {
     }
 }
 
+#phoneInput {
+    &.error {
+        border: 3px solid#dc143c;
+    }
+}
+
 // HEADER 
 
 .header {
@@ -2207,14 +2213,6 @@ $slick-opacity-not-active: 0.25 !default;
     }
     @else {
         @return url($slick-font-path + $url);
-    }
-}
-
-/* Slider */
-
-.slick-list {
-    .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }
 }
 

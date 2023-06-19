@@ -68,7 +68,15 @@ window.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         // popupWrapper.classList.remove('active');
     })
-    
 
+
+    const phoneNumberInput = document.getElementById('phoneInput');
+
+    phoneNumberInput.addEventListener('input', function() {
+        const inputValue = phoneNumberInput.value;
+        const numericValue = inputValue.replace(/\D/g, '');
+        const maskedValue = '+' + numericValue;
+        phoneNumberInput.value = maskedValue;
+    });
 
 });
